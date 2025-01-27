@@ -21,7 +21,7 @@ app.add_middleware(
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load the trained Gradient Boosting model using a relative path
-model_path = os.path.join(BASE_DIR, "../Model/crop_recommendation_model_gb.pkl")
+model_path = os.path.join(BASE_DIR, "crop_recommendation_model_gb.pkl")
 
 try:
     model = joblib.load(model_path)
