@@ -1,0 +1,108 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9ecef;
+}
+
+.app-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input and Button styles */
+
+
+.input-container {
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.f-button{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  margin-left: 50%;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-input {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+  width: 150px; /* Fixed width for labels */
+  text-align: left;
+}
+
+.input {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 200px; /* Fixed width for inputs */
+}
+
+.button {
+  padding: 8px 15px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #4cae4c;
+}
+
+.weather-info {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.prediction-result {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #28a745;
+  font-weight: bold;
+}
