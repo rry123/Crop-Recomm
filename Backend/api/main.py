@@ -18,15 +18,15 @@ app.add_middleware(
 )
 
 # Get the directory of the current file (useful for relative paths)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Load the trained Gradient Boosting model using a relative path
-model_path = os.path.join(BASE_DIR, "crop_recommendation_model_gb.pkl")
+# # Load the trained Gradient Boosting model using a relative path
+# model_path = os.path.join(BASE_DIR, "crop_recommendation_model_gb.pkl")
 
-try:
-    model = joblib.load(model_path)
-except Exception as e:
-    raise RuntimeError(f"Error loading the model: {str(e)}")
+# try:
+#     model = joblib.load(model_path)
+# except Exception as e:
+#     raise RuntimeError(f"Error loading the model: {str(e)}")
 
 # Define input format using Pydantic (individual features)
 class CropPredictionRequest(BaseModel):
