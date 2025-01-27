@@ -44,25 +44,25 @@ def read_root():
     return {"message": "Crop Recommendation API is up and running!"}
 
 # Prediction endpoint
-@app.post("/predict")
-def predict(request: CropPredictionRequest):
-    try:
-        # Extract the features and convert them to a numpy array
-        features = np.array([
-            request.feature1, 
-            request.feature2, 
-            request.feature3, 
-            request.feature4, 
-            request.feature5, 
-            request.feature6, 
-            request.feature7
-        ]).reshape(1, -1)  # Reshape to match model input
+# @app.post("/predict")
+# def predict(request: CropPredictionRequest):
+#     try:
+#         # Extract the features and convert them to a numpy array
+#         features = np.array([
+#             request.feature1, 
+#             request.feature2, 
+#             request.feature3, 
+#             request.feature4, 
+#             request.feature5, 
+#             request.feature6, 
+#             request.feature7
+#         ]).reshape(1, -1)  # Reshape to match model input
         
-        # Make the prediction
-        prediction = model.predict(features)
+#         # Make the prediction
+#         prediction = model.predict(features)
         
-        # Return the prediction result
-        return {"prediction": prediction[0]}
+#         # Return the prediction result
+#         return {"prediction": prediction[0]}
     
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Prediction error: {str(e)}")
+#     except Exception as e:
+#         raise HTTPException(status_code=400, detail=f"Prediction error: {str(e)}")
