@@ -2,4 +2,4 @@ fastapi
 uvicorn
 joblib
 numpy
-pydantic
+scikit-learn
